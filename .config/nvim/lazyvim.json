@@ -1,1 +1,9 @@
-../../dotfiles/.config/nvim/lazyvim.json
+{
+  "extras": [
+
+  ],
+  "news": {
+    "NEWS.md": "2850"
+  },
+  "version": 3
+}
