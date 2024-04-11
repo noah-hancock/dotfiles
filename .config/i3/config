@@ -58,10 +58,6 @@ gaps inner 15
 # Backgrounds
 # TODO: Add changing backgrounds
 exec --no-startup-id feh --bg-scale ~/Photos/Wallpapers/evening-sky.png
-# exec --no-startup-id synclient TapButton1=1 TapButton2=2 TapButton3=3
-
-# Startup Apps
-exec --no-startup-id i3-msg "workspace 1;"
 
 # Polybar
 exec --no-startup-id polybar
@@ -179,8 +175,8 @@ set $ws2 "2:www"
 exec --no-startup-id i3-msg "workspace 2:www; exec firefox --browser"
 set $ws3 "3:terms"
 exec --no-startup-id i3-msg "workspace 3:terms; exec kitty --hold 'neofetch'"
-set $ws4 "4"
-set $ws5 "5"
+set $ws4 "4:draw"
+set $ws5 "5:chat"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
