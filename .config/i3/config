@@ -158,11 +158,8 @@ bindsym $mod+a focus parent
 # TODO: Use this setup and add more names when needed.
 # FIX: Firefox starts weird.
 set $ws1 "1:fun"
-exec --no-startup-id i3-msg "workspace 1:fun; exec firefox --new-tab twitch.tv --new-tab youtube.com --new-tab x.com"
 set $ws2 "2:www"
-exec --no-startup-id i3-msg "workspace 2:www; exec firefox --browser"
 set $ws3 "3:terms"
-exec --no-startup-id i3-msg "workspace 3:terms; exec kitty --hold 'neofetch'"
 set $ws4 "4:chat"
 set $ws5 "5:draw"
 set $ws6 "6:music"
