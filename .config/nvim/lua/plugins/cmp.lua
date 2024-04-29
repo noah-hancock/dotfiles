@@ -6,6 +6,9 @@ return {
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-path",
   },
+  requires = {
+    { "kdheepak/cmp-latex-symbols", "saadparwaiz1/cmp_luasnip" },
+  },
   opts = function()
     vim.api.nvim_set_hl(0, "CmpGhostText", { link = "Comment", default = true })
     local cmp = require("cmp")

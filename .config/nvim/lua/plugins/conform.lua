@@ -22,6 +22,7 @@ return {
         ["graphql"] = { "prettier" },
         ["handlebars"] = { "prettier" },
         ["python"] = { "ast-grep" },
+        ["latex"] = { "latexindent" },
       },
     },
   },

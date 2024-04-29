@@ -31,14 +31,33 @@ return {
     vim.keymap.set("n", "<leader>M", "<cmd>Grapple open_tags<cr>", { desc = "Open Tags" }),
   },
 
+  -- Latex preview
   {
     "jbyuki/nabla.nvim",
     vim.keymap.set("n", "<leader>p", "<cmd>:lua require('nabla').popup()<cr>", { desc = "Nabla Preview" }),
-    ft = { "markdown", "txt" },
+    ft = { "markdown", "tex" },
   },
+
+  -- Toggle terminal
   {
     "akinsho/toggleterm.nvim",
     vim.keymap.set("n", "<leader>t", "<cmd>:ToggleTerm<cr>", { desc = "Open terminal" }),
     config = true,
+  },
+
+  -- LaTeX symbols
+  {
+    "kdheepak/cmp-latex-symbols",
+    ft = { "tex", "markdown" },
+  },
+
+  -- VimTeX
+  {
+    "lervag/vimtex",
+  },
+
+  -- LuaSnip LaTeX
+  {
+    "iurimateus/luasnip-latex-snippets.nvim",
   },
 }

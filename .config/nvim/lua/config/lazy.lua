@@ -19,7 +19,7 @@ require("lazy").setup({
     -- Disabled
     { "akinsho/bufferline.nvim", enabled = false },
     { "folke/flash.nvim", enabled = false },
-
+    { "rafamadriz/friendly-snippets", enabled = false },
     { import = "lazyvim.plugins.extras.lsp.none-ls", enabled = true },
 
     { import = "plugins" },

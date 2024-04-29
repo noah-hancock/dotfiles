@@ -156,7 +156,6 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 # TODO: Use this setup and add more names when needed.
-# FIX: Firefox starts weird.
 set $ws1 "1:fun"
 set $ws2 "2:www"
 set $ws3 "3:terms"
