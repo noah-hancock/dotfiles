@@ -35,7 +35,7 @@ return {
   {
     "jbyuki/nabla.nvim",
     vim.keymap.set("n", "<leader>p", "<cmd>:lua require('nabla').popup()<cr>", { desc = "Nabla Preview" }),
-    ft = { "markdown", "tex" },
+    ft = { "markdown", "tex", "latex" },
   },
 
   -- Toggle terminal
@@ -58,7 +58,8 @@ return {
 
   -- LuaSnip LaTeX
   {
-    "iurimateus/luasnip-latex-snippets.nvim",
+    "evesdropper/luasnip-latex-snippets.nvim",
+    lazy = true,
   },
 
   {
@@ -72,5 +73,39 @@ return {
         theme = "Dracula",
       })
     end,
+  },
+  {
+    "epwalsh/obsidian.nvim",
+    version = "*", -- recommended, use latest release instead of latest commit
+    lazy = true,
+    ft = "markdown",
+    -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
+    -- event = {
+    --   -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
+    --   -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/**.md"
+    --   "BufReadPre path/to/my-vault/**.md",
+    --   "BufNewFile path/to/my-vault/**.md",
+    -- },
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    opts = {
+      buffer = true,
+      workspaces = {
+        -- {
+        -- name = "personal",
+        -- path = "~/vaults/personal",
+        -- },
+        {
+          name = "School",
+          path = "~/notes/vaults/School",
+        },
+      },
+      templates = {
+        folder = "~/notes/vaults/Templates",
+        date_format = "%Y-%m-%d",
+        time_format = "%H:%M",
+      },
+    },
   },
 }

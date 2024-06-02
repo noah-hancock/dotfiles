@@ -228,6 +228,7 @@ bindsym $mod+r mode "resize"
 # Custom
 # Disable Touchpad
 bindsym $mod+g exec ~/.config/i3/togglesynaptics.sh
+bindsym Print exec flameshot gui
 
 # Change key layout
 bindsym $mod+m exec ~/.config/i3/keyboardusca.sh
